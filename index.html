@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        /* Carousel styling */
+        #MenuSlider,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 100vh;
+        }
+
+        .carousel-item:nth-child(1) {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        .carousel-item:nth-child(2) {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        .carousel-item:nth-child(3) {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #MenuSlider {
+            margin-top: -58.59px;
+          }
+        }
+
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+      </style>
+  </head>
+  <body>
+
+
+<!--Main Navigation-->
+<header>
+
+
+    <!-- Navbar -->
+    <nav
+         class="navbar navbar-expand-lg navbar-dark d-none d-lg-block"
+         style="z-index: 2000"
+         >
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a
+           class="navbar-brand nav-link"
+           target="_blank"
+           href="#"
+           >
+          <strong>ISE</strong>
+        </a>
+        <button class="navbar-toggler "
+
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarExample01"
+                aria-controls="navbarExample01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Boton "Sobre mi " -->
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#sobremi">Sobre mí</a>
+            </li>
+            <!-- Boton "Habilidades" -->
+            <li class="nav-item">
+              <a
+                 class="nav-link"
+                 href="#habilidades"
+                 >Hablidades</a
+                >
+            </li>
+            <!-- Boton "Contacto" -->
+            <li class="nav-item">
+              <a
+                 class="nav-link"
+                 href="#contacto"
+                 >Contacto</a
+                >
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div
+         id="MenuSlider"
+         class="carousel slide carousel-fade shadow-2-strong "
+         data-bs-ride="carousel"
+         >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li
+            data-bs-target="#MenuSlider"
+            data-bs-slide-to="0"
+            class="active"
+            ></li>
+        <li data-bs-target="#MenuSlider" data-bs-slide-to="1"></li>
+        <li data-bs-target="#MenuSlider" data-bs-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Lineas item -->
+        <div class="carousel-item active" data-bs-interval="10000">
+              <video
+                 style="min-width: 100%; min-height: 100%"
+                 playsinline
+                 autoplay
+                 muted
+                 loop
+                 >
+                  <source
+                    class="h-100"
+                    src="https://mdbootstrap.com/img/video/Lines.mp4"
+                    type="video/mp4"
+                    />
+              </video>
+            <!-- Texto 1er Item -->
+              <div class="carousel-caption text-start h-50">
+                  <h1 class="display-1">Hola mundo ! !</h1>
+                   <p>Desarrollando el futuro.</p>
+              </div>
+          </div>
+
+        <!-- Bosque item -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <video
+                 style="min-width: 100%; min-height: 100%"
+                 playsinline
+                 autoplay
+                 muted
+                 loop
+                 >
+            <source
+                    class="h-100"
+                    src="https://mdbootstrap.com/img/video/forest.mp4"
+                    type="video/mp4"
+                    />
+          </video>
+          <!-- Texto 2do Item -->
+                       
+          <div class="carousel-caption text-start justify-content-center align-items-center h-50">
+            <h1 class="display-1">Creando nuevas fronteras.</h1>
+           </div>
+
+        </div>
+
+        <!-- Playa item -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <video
+                 style="min-width: 100%; min-height: 100%"
+                 playsinline
+                 autoplay
+                 muted
+                 loop
+                 >
+            <source
+                    class="h-100"
+                    src="https://mdbootstrap.com/img/video/Tropical.mp4"
+                    type="video/mp4"
+                    />
+          </video>
+           <!-- Texto 3er Item -->
+           <div class="carousel-caption  ">
+            <h1 class="display-1">Comenzemos.</h1>
+           </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a
+         class="carousel-control-prev"
+         href="#MenuSlider"
+         role="button"
+         data-bs-slide="prev"
+         >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a
+         class="carousel-control-next"
+         href="#MenuSlider"
+         role="button"
+         data-bs-slide="next"
+         >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main l-->  
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Sobre mi -->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div
+                 class="bg-image hover-overlay ripple shadow-2-strong"
+                 data-bs-ripple-color="light"
+                 >
+              <img
+                   src="/Proyecto1/assets/worker.jpg"
+                   class="img-fluid"
+                   />
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4" >
+            <h4 id="sobremi"><strong>¿Quién soy?</strong></h4>
+            <p class="text-muted">
+              Mi nombre es Esteban Laburos , tengo 38 años de edad y arranque mi carrera como
+              programador a mis 28 años. Soy de Argentina , provincia de Buenos Aires , y actualmente
+              me encuentro viviendo en Uruguay. Tengo una pareja y dos gatos, a los cuales quiero mucho 
+              y son mi motivación día a día.
+            </p>
+            <p><strong>Experiencia</strong></p>
+            <p class="text-muted">
+              Gestioné eficazmente los proyectos creativos, promoviendo una imagen corporativa de calidad.
+              Diseñé e implementé campañas de correo directo, generando un incremento en las ventas del 10 % por trimestre.
+              Desarrollé y mantuve relaciones internas y externas, que fueron cruciales para la mejora y el éxito de la empresa.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Section: Sobre mi-->
+
+      <hr class="my-5" />
+
+      <!--Section: Intereses Personales-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4" >
+            <h3 id="sobremi"><strong>Intereses Personales</strong></h3>
+            <p class="text-muted">
+              <h5>Jugador de fútbol</h5> Formo parte de una liga barrial de fútbol con prácticas semanales desde hace más de seis años. 
+              Me considero un seguidor de este deporte que considero de mucho valor en nuestra cultura.
+              <br><br>
+              <h5>Practicante de yoga</h5>
+               La práctica de esta disciplina desde hace ya varios años 
+              me ha servido de complemento vital para el desarrollo del equilibrio y la serenidad interior. 
+              He visto clases y cursos con diversos profesores locales y extranjeros.
+            </p>
+            <p class="text-muted">
+              <h5>Cinéfilo</h5>
+               Particular predilección por el cine italiano de autor: Roberto Rossellini, Vittorio De Sica, Luchino Visconti, etc. 
+              Poseo una amplia videoteca al respecto. 
+              He realizado talleres en el Centro de Cine de Santiago y en el Club de Aficionados BAMA (Buenos Aires).
+            </p>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <div
+                 class="bg-image hover-overlay ripple shadow-2-strong"
+                 data-bs-ripple-color="light"
+                 >
+              <img
+                   src="/Proyecto1/assets/workgroup2.jpg"
+                   class="img-fluid"
+                   />
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Contacto-->
+      <section class="mb-5">
+        <h4 class="mb-5 text-center" id="contacto">
+          <strong>Facilis consequatur eligendi</strong>
+        </h4>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input
+                           type="text"
+                           id="form3Example1"
+                           class="form-control"
+                           />
+                    <label class="form-label" for="form3Example1"
+                           >First name</label
+                      >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input
+                           type="text"
+                           id="form3Example2"
+                           class="form-control"
+                           />
+                    <label class="form-label" for="form3Example2"
+                           >Last name</label
+                      >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3"
+                       >Email address</label
+                  >
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input
+                       type="password"
+                       id="form3Example4"
+                       class="form-control"
+                       />
+                <label class="form-label" for="form3Example4">Password</label>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                       class="form-check-input me-2"
+                       type="checkbox"
+                       value=""
+                       id="form2Example3"
+                       checked
+                       />
+                <label class="form-check-label" for="form2Example3">
+                  Subscribe to our newsletter
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Sign up
+              </button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>or sign up with:</p>
+                <button
+                        type="button"
+                        class="btn btn-primary btn-floating mx-1"
+                        >
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button
+                        type="button"
+                        class="btn btn-primary btn-floating mx-1"
+                        >
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button
+                        type="button"
+                        class="btn btn-primary btn-floating mx-1"
+                        >
+                  <i class="fab fa-twitter"></i>
+                </button>
+
+                <button
+                        type="button"
+                        class="btn btn-primary btn-floating mx-1"
+                        >
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+  <!--Main -->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+      <a
+         role="button"
+         class="btn btn-primary btn-lg m-2"
+         href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+         rel="nofollow"
+         target="_blank"
+         >
+        Learn Bootstrap 5
+      </a>
+      <a
+         role="button"
+         class="btn btn-primary btn-lg m-2"
+         href="https://mdbootstrap.com/docs/standard/"
+         target="_blank"
+         >
+        Download MDB UI KIT
+      </a>
+    </div>
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow MDB on social media</p>
+      <a
+         href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+         class="btn btn-primary m-1"
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a
+         href="https://www.facebook.com/mdbootstrap"
+         class="btn btn-primary m-1"
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a
+         href="https://twitter.com/MDBootstrap"
+         class="btn btn-primary m-1"
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a
+         href="https://github.com/mdbootstrap/mdb-ui-kit"
+         class="btn btn-primary m-1"
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
